@@ -29,7 +29,8 @@
 \def\H{\rule{0pt}{1.5ex}H}
 
 \usepackage{graphicx}
-\graphicspath{{assets/}}
+\graphicspath{ {assets/initial/} {assets/results/} }
+\usepackage[export]{adjustbox}
 
 \begin{document}
 	\begin{titlepage}
@@ -39,7 +40,8 @@
 			\large \textbf{«Российский химико-технологический университет имени Д.И. Менделеева»} \\
 
 			\vspace*{4cm}
-			\LARGE \textbf{ОТЧЕТ ПО ЛАБОРАТОРНОЙ РАБОТЕ}
+			\LARGE \textbf{ОТЧЕТ ПО ЛАБОРАТОРНОЙ РАБОТЕ} \\
+			\Large \textbf{Серментация частиц}
 
 			\vspace*{4cm}
 			\begin{flushright}
@@ -54,7 +56,7 @@
 				\end{tabular}
 			\end{flushright}
 
-			\vspace*{6cm}
+			\vspace*{5cm}
 			\Large \textbf{Москва \\ 2025}
 		\end{center}
 	\end{titlepage}
@@ -69,6 +71,18 @@
 	\addcontentsline{toc}{section}{Описание задачи}
 	\large
 
+	\subsection*{Исходные данные}
+	\addcontentsline{toc}{subsection}{Исходные данные}
+	\large
+	\begin{figure}[h]
+		\includegraphics[width=300pt,center]{Image5.jpg}
+		\caption{Снимок 5}
+	\end{figure}
+	\begin{figure}[h]
+		\includegraphics[width=300pt,center]{Image6.jpg}
+		\caption{Снимок 6}
+	\end{figure}
+
 	\newpage
 
 	\section*{Описание метода/модели}
@@ -82,5 +96,78 @@
 
 	\newpage
 	\vfill
+
+	\subsection*{Подготовительные данные}
+	\addcontentsline{toc}{subsection}{Подготовительные данные}
+	\large
+
+	\subsubsection*{Valid Dataset}
+	\large
+	\begin{figure}[h]
+		\includegraphics[width=250pt,center]{Image6_300_300.jpg}
+		\caption{Вырезанное из снимка 6 изображние 300 на 300 пикселей}
+	\end{figure}
+	\begin{figure}
+		\includegraphics[width=250pt,center]{Image6_400_400.jpg}
+		\caption{Вырезанное из снимка 6 изображние 400 на 400 пикселей}
+	\end{figure}
+	\begin{figure}
+		\includegraphics[width=250pt,center]{Image6_500_500.jpg}
+		\caption{Вырезанное из снимка 6 изображние 500 на 500 пикселей}
+	\end{figure}
+
+	\newpage
+
+	\subsubsection*{Test Dataset}
+	\large
+	\begin{figure}[h]
+		\includegraphics[width=250pt,center]{Image5_601_601.jpg}
+		\caption{Вырезанное из снимка 5 изображние 601 на 601 пикселей}
+	\end{figure}
+	\begin{figure}
+		\includegraphics[width=250pt,center]{Image5_700_700.jpg}
+		\caption{Вырезанное из снимка 5 изображние 700 на 700 пикселей}
+	\end{figure}
+	\begin{figure}
+		\includegraphics[width=250pt,center]{Image5_801_801.jpg}
+		\caption{Вырезанное из снимка 5 изображние 801 на 801 пикселей}
+	\end{figure}
+
+	\newpage
+
+	\subsubsection*{Train Dataset}
+	\large
+	\begin{figure}[h]
+		\includegraphics[width=250pt,center]{Image6_350_350.jpg}
+		\caption{Вырезанное из снимка 6 изображние 350 на 350 пикселей}
+	\end{figure}
+	\begin{figure}
+		\includegraphics[width=250pt,center]{Image6_551_551.jpg}
+		\caption{Вырезанное из снимка 6 изображние 551 на 551 пикселей}
+	\end{figure}
+	\begin{figure}
+		\includegraphics[width=250pt,center]{Image6_451_451.jpg}
+		\caption{Вырезанное из снимка 6 изображние 451 на 451 пикселей}
+	\end{figure}
+
+	\subsection*{Результаты}
+	\addcontentsline{toc}{subsection}{Результаты}
+	\large
+	\begin{figure}[h]
+		\includegraphics[width=250pt,center]{Image6_300_300_result.png}
+		\caption{Результат вырезанного из снимка 6 изображeние 300 на 300 пикселей}
+	\end{figure}
+	\begin{figure}
+		\includegraphics[width=250pt,center]{Image6_400_400_result.png}
+		\caption{Результат вырезанного из снимка 6 изображeние 400 на 400 пикселей}
+	\end{figure}
+	\begin{figure}
+		\includegraphics[width=250pt,center]{Image6_500_500_result.png}
+		\caption{Результат вырезанного из снимка 6 изображние 500 на 500 пикселей}
+	\end{figure}
+	\begin{figure}
+		\includegraphics[width=250pt,center]{Image6_result.png}
+		\caption{Результат снимка 6}
+	\end{figure}
 
 \end{document}
